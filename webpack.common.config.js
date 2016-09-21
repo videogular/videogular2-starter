@@ -1,6 +1,8 @@
 'use strict';
 const path = require('path');
 const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 
 module.exports = function () {
     return {
@@ -47,7 +49,10 @@ module.exports = function () {
             new webpack.LoaderOptionsPlugin({
                 minimize: true,
                 debug: false
-            })
+            }),
+            new CopyWebpackPlugin([
+                { from: 'node_modules/videogular2/fonts', to: 'fonts' }
+            ])
         ],
 
         devtool: false,

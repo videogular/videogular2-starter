@@ -39,6 +39,6 @@ module.exports = function (env) {
         devServer: {
             contentBase: 'dist/prod'
         },
-        bail: true
+        bail: false
     });
 };
