@@ -21,7 +21,10 @@
                 "../node_modules/videogular2/fonts/videogular.css",
                 "styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+                "../node_modules/zone.js/dist/zone.js",
+                "../node_modules/reflect-metadata/Reflect.js"
+            ],
             "environments": {
                 "source": "environments/environment.ts",
                 "dev": "environments/environment.ts",
