@@ -1,10 +1,10 @@
-import { Videogular2StarterPage } from './app.po';
+import { VideogularStarterPage } from './app.po';
 
-describe('videogular2-starter App', function() {
-  let page: Videogular2StarterPage;
+describe('videogular-starter App', () => {
+  let page: VideogularStarterPage;
 
   beforeEach(() => {
-    page = new Videogular2StarterPage();
+    page = new VideogularStarterPage();
   });
 
   it('should display message saying app works', () => {
